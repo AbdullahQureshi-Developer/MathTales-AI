@@ -1,0 +1,472 @@
+{
+  "summary": [
+    {
+      "config": "Baseline (no RAG)",
+      "n": 20,
+      "solvability": 1.0,
+      "operands_present": 1.0,
+      "op_recognised": 0.85,
+      "answer_leak": 0.05,
+      "concept_coverage": 0.258,
+      "avg_topic_drift": 0.893,
+      "avg_bert_f1": 0.907
+    },
+    {
+      "config": "RAG",
+      "n": 20,
+      "solvability": 1.0,
+      "operands_present": 1.0,
+      "op_recognised": 0.8,
+      "answer_leak": 0.1,
+      "concept_coverage": 0.249,
+      "avg_topic_drift": 0.873,
+      "avg_bert_f1": 0.919
+    }
+  ],
+  "detail": {
+    "Baseline (no RAG)": [
+      {
+        "id": 1,
+        "prompt": "A farmer plants 11 rows with 11 sunflowers each. How many total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.873,
+        "bert_f1": 0.895
+      },
+      {
+        "id": 2,
+        "prompt": "A wizard has 12 magic coins and puts them into groups of 24. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.891,
+        "bert_f1": 0.887
+      },
+      {
+        "id": 3,
+        "prompt": "A wizard has 11 magic coins and puts them into groups of 33. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.5,
+        "topic_drift": 0.81,
+        "bert_f1": 0.904
+      },
+      {
+        "id": 4,
+        "prompt": "An astronaut finds 3 moon rocks and then finds 9 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.909,
+        "bert_f1": 0.91
+      },
+      {
+        "id": 5,
+        "prompt": "An astronaut finds 3 moon rocks and then finds 5 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.9,
+        "bert_f1": 0.899
+      },
+      {
+        "id": 6,
+        "prompt": "An astronaut finds 6 moon rocks and then finds 6 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.922,
+        "bert_f1": 0.926
+      },
+      {
+        "id": 7,
+        "prompt": "An astronaut finds 2 moon rocks and then finds 4 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.67,
+        "topic_drift": 0.91,
+        "bert_f1": 0.905
+      },
+      {
+        "id": 8,
+        "prompt": "A wizard has 5 magic coins and puts them into groups of 45. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.889,
+        "bert_f1": 0.882
+      },
+      {
+        "id": 9,
+        "prompt": "A wizard has 2 magic coins and puts them into groups of 10. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.963,
+        "bert_f1": 0.965
+      },
+      {
+        "id": 10,
+        "prompt": "Tell a story where 2 friends share 22 apples equally.",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.889,
+        "bert_f1": 0.884
+      },
+      {
+        "id": 11,
+        "prompt": "An astronaut finds 12 moon rocks and then finds 6 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.917,
+        "bert_f1": 0.903
+      },
+      {
+        "id": 12,
+        "prompt": "A farmer plants 9 rows with 11 sunflowers each. How many total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.856,
+        "bert_f1": 0.899
+      },
+      {
+        "id": 13,
+        "prompt": "A farmer plants 3 rows with 8 sunflowers each. How many total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.883,
+        "bert_f1": 0.907
+      },
+      {
+        "id": 14,
+        "prompt": "An astronaut finds 10 moon rocks and then finds 4 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.932,
+        "bert_f1": 0.913
+      },
+      {
+        "id": 15,
+        "prompt": "A dragon collects 7 gems but loses 15. How many remain?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.928,
+        "bert_f1": 0.899
+      },
+      {
+        "id": 16,
+        "prompt": "A wizard has 8 magic coins and puts them into groups of 16. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.5,
+        "topic_drift": 0.967,
+        "bert_f1": 0.962
+      },
+      {
+        "id": 17,
+        "prompt": "A dragon collects 4 gems but loses 11. How many remain?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.884,
+        "bert_f1": 0.902
+      },
+      {
+        "id": 18,
+        "prompt": "Tell a story where 8 friends share 48 apples equally.",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.67,
+        "topic_drift": 0.758,
+        "bert_f1": 0.872
+      },
+      {
+        "id": 19,
+        "prompt": "A wizard has 6 magic coins and puts them into groups of 36. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": true,
+        "concept_coverage": 0.5,
+        "topic_drift": 0.904,
+        "bert_f1": 0.949
+      },
+      {
+        "id": 20,
+        "prompt": "An astronaut finds 3 moon rocks and then finds 12 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.867,
+        "bert_f1": 0.886
+      }
+    ],
+    "RAG": [
+      {
+        "id": 1,
+        "prompt": "A farmer plants 11 rows with 11 sunflowers each. How many total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.7,
+        "bert_f1": 0.88
+      },
+      {
+        "id": 2,
+        "prompt": "A wizard has 12 magic coins and puts them into groups of 24. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.859,
+        "bert_f1": 0.948
+      },
+      {
+        "id": 3,
+        "prompt": "A wizard has 11 magic coins and puts them into groups of 33. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": true,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.951,
+        "bert_f1": 0.944
+      },
+      {
+        "id": 4,
+        "prompt": "An astronaut finds 3 moon rocks and then finds 9 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.67,
+        "topic_drift": 0.869,
+        "bert_f1": 0.894
+      },
+      {
+        "id": 5,
+        "prompt": "An astronaut finds 3 moon rocks and then finds 5 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.899,
+        "bert_f1": 0.904
+      },
+      {
+        "id": 6,
+        "prompt": "An astronaut finds 6 moon rocks and then finds 6 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.67,
+        "topic_drift": 0.928,
+        "bert_f1": 0.928
+      },
+      {
+        "id": 7,
+        "prompt": "An astronaut finds 2 moon rocks and then finds 4 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.786,
+        "bert_f1": 0.895
+      },
+      {
+        "id": 8,
+        "prompt": "A wizard has 5 magic coins and puts them into groups of 45. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.5,
+        "topic_drift": 0.966,
+        "bert_f1": 0.958
+      },
+      {
+        "id": 9,
+        "prompt": "A wizard has 2 magic coins and puts them into groups of 10. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.98,
+        "bert_f1": 0.976
+      },
+      {
+        "id": 10,
+        "prompt": "Tell a story where 2 friends share 22 apples equally.",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.851,
+        "bert_f1": 0.896
+      },
+      {
+        "id": 11,
+        "prompt": "An astronaut finds 12 moon rocks and then finds 6 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.936,
+        "bert_f1": 0.941
+      },
+      {
+        "id": 12,
+        "prompt": "A farmer plants 9 rows with 11 sunflowers each. How many total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.655,
+        "bert_f1": 0.882
+      },
+      {
+        "id": 13,
+        "prompt": "A farmer plants 3 rows with 8 sunflowers each. How many total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.717,
+        "bert_f1": 0.882
+      },
+      {
+        "id": 14,
+        "prompt": "An astronaut finds 10 moon rocks and then finds 4 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.921,
+        "bert_f1": 0.931
+      },
+      {
+        "id": 15,
+        "prompt": "A dragon collects 7 gems but loses 15. How many remain?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.79,
+        "bert_f1": 0.883
+      },
+      {
+        "id": 16,
+        "prompt": "A wizard has 8 magic coins and puts them into groups of 16. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.971,
+        "bert_f1": 0.96
+      },
+      {
+        "id": 17,
+        "prompt": "A dragon collects 4 gems but loses 11. How many remain?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.0,
+        "topic_drift": 0.955,
+        "bert_f1": 0.927
+      },
+      {
+        "id": 18,
+        "prompt": "Tell a story where 8 friends share 48 apples equally.",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.33,
+        "topic_drift": 0.891,
+        "bert_f1": 0.883
+      },
+      {
+        "id": 19,
+        "prompt": "A wizard has 6 magic coins and puts them into groups of 36. How many groups?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": true,
+        "concept_coverage": 0.5,
+        "topic_drift": 0.968,
+        "bert_f1": 0.962
+      },
+      {
+        "id": 20,
+        "prompt": "An astronaut finds 3 moon rocks and then finds 12 more. What is the total?",
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "answer_leaked": false,
+        "concept_coverage": 0.67,
+        "topic_drift": 0.86,
+        "bert_f1": 0.9
+      }
+    ]
+  }
+}

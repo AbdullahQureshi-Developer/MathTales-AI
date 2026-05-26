@@ -1,0 +1,2978 @@
+{
+  "summary": {
+    "tests": 55,
+    "solvability_rate": 0.4,
+    "operands_present_rate": 0.4,
+    "operation_present_rate": 0.764,
+    "answer_leak_rate": 0.073,
+    "avg_concept_coverage": 0.196,
+    "problem_structure_rate": 0.473,
+    "avg_topic_drift": 0.798,
+    "avg_bert_f1": 0.921
+  },
+  "results": [
+    {
+      "id": 1,
+      "prompt": "A dragon collects 8 gems but loses 15. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.892,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.048,
+      "bertscore": {
+        "precision": 0.943,
+        "recall": 0.955,
+        "f1": 0.949
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 2,
+      "prompt": "A dragon collects 4 gems but loses 10. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.791,
+        "entity_consistency": 0.5,
+        "contradicted_entities": 0,
+        "sentence_count": 4,
+        "word_count": 63,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.5,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 2,
+            "The": 1
+          }
+        }
+      },
+      "bleu": 0.011,
+      "bertscore": {
+        "precision": 0.852,
+        "recall": 0.92,
+        "f1": 0.884
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 3,
+      "prompt": "Tell a story where 9 friends share 72 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.751,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.017,
+      "bertscore": {
+        "precision": 0.874,
+        "recall": 0.904,
+        "f1": 0.889
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 4,
+      "prompt": "A dragon collects 7 gems but loses 18. How many remain?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.885,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 22,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "It": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.063,
+      "bertscore": {
+        "precision": 0.913,
+        "recall": 0.941,
+        "f1": 0.927
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 5,
+      "prompt": "An astronaut finds 6 moon rocks and then finds 12 more. What is the total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "more"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.944,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 19,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "An": 1,
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.077,
+      "bertscore": {
+        "precision": 0.942,
+        "recall": 0.951,
+        "f1": 0.947
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 6,
+      "prompt": "Tell a story where 11 friends share 99 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.697,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 7,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.022,
+      "bertscore": {
+        "precision": 0.867,
+        "recall": 0.88,
+        "f1": 0.873
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 7,
+      "prompt": "A wizard has 6 magic coins and puts them into groups of 30. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.5,
+      "concepts_found": [
+        "divide"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.937,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 23,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.39,
+      "bertscore": {
+        "precision": 0.94,
+        "recall": 0.968,
+        "f1": 0.954
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 8,
+      "prompt": "A farmer plants 5 rows with 6 sunflowers each. How many total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.718,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 23,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1,
+            "Calculate": 1,
+            "What": 1
+          }
+        }
+      },
+      "bleu": 0.049,
+      "bertscore": {
+        "precision": 0.899,
+        "recall": 0.924,
+        "f1": 0.911
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 9,
+      "prompt": "Tell a story where 3 friends share 33 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.765,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 25,
+        "entity_detail": {
+          "unique_entities": 6,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "Three": 1,
+            "Mia": 1,
+            "Lucas": 1,
+            "Zoe": 1,
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.024,
+      "bertscore": {
+        "precision": 0.878,
+        "recall": 0.93,
+        "f1": 0.903
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 10,
+      "prompt": "An astronaut finds 9 moon rocks and then finds 3 more. What is the total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.67,
+      "concepts_found": [
+        "total",
+        "more"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.92,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 21,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "An": 1,
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.071,
+      "bertscore": {
+        "precision": 0.947,
+        "recall": 0.953,
+        "f1": 0.95
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 11,
+      "prompt": "A wizard has 7 magic coins and puts them into groups of 28. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.5,
+      "concepts_found": [
+        "divide"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.941,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 23,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.39,
+      "bertscore": {
+        "precision": 0.936,
+        "recall": 0.965,
+        "f1": 0.95
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 12,
+      "prompt": "A dragon collects 3 gems but loses 7. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.879,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.048,
+      "bertscore": {
+        "precision": 0.944,
+        "recall": 0.955,
+        "f1": 0.949
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 13,
+      "prompt": "A farmer plants 3 rows with 10 sunflowers each. How many total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.355,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 3,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.028,
+      "bertscore": {
+        "precision": 0.942,
+        "recall": 0.856,
+        "f1": 0.897
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 14,
+      "prompt": "An astronaut finds 2 moon rocks and then finds 10 more. What is the total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "total"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.891,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 20,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.028,
+      "bertscore": {
+        "precision": 0.923,
+        "recall": 0.936,
+        "f1": 0.93
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 15,
+      "prompt": "A dragon collects 4 gems but loses 16. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": true
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.725,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 47,
+        "entity_detail": {
+          "unique_entities": 5,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "It": 1,
+            "How": 1,
+            "Grade": 1,
+            "Problems": 1,
+            "Astronaut": 1
+          }
+        }
+      },
+      "bleu": 0.01,
+      "bertscore": {
+        "precision": 0.853,
+        "recall": 0.915,
+        "f1": 0.883
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 4,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 16,
+      "prompt": "A wizard has 5 magic coins and puts them into groups of 30. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.5,
+      "concepts_found": [
+        "divide"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.951,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 23,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.51,
+      "bertscore": {
+        "precision": 0.948,
+        "recall": 0.975,
+        "f1": 0.961
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 17,
+      "prompt": "A dragon collects 7 gems but loses 17. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.898,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.048,
+      "bertscore": {
+        "precision": 0.942,
+        "recall": 0.954,
+        "f1": 0.948
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 18,
+      "prompt": "A wizard has 9 magic coins and puts them into groups of 27. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.5,
+      "concepts_found": [
+        "divide"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.951,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 23,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.51,
+      "bertscore": {
+        "precision": 0.948,
+        "recall": 0.975,
+        "f1": 0.961
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 19,
+      "prompt": "A farmer plants 2 rows with 11 sunflowers each. How many total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.741,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1,
+            "Farmer": 1
+          }
+        }
+      },
+      "bleu": 0.078,
+      "bertscore": {
+        "precision": 0.89,
+        "recall": 0.902,
+        "f1": 0.896
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 20,
+      "prompt": "Tell a story where 12 friends share 84 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.775,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 16,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.029,
+      "bertscore": {
+        "precision": 0.88,
+        "recall": 0.909,
+        "f1": 0.894
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 21,
+      "prompt": "A wizard has 3 magic coins and puts them into groups of 12. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.951,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 20,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.537,
+      "bertscore": {
+        "precision": 0.955,
+        "recall": 0.973,
+        "f1": 0.964
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 22,
+      "prompt": "A wizard has 8 magic coins and puts them into groups of 32. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.5,
+      "concepts_found": [
+        "divide"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.779,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 5,
+        "word_count": 57,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1,
+            "Can": 1
+          }
+        }
+      },
+      "bleu": 0.153,
+      "bertscore": {
+        "precision": 0.863,
+        "recall": 0.959,
+        "f1": 0.908
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 3,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 23,
+      "prompt": "Tell a story where 5 friends share 55 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.768,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 16,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.029,
+      "bertscore": {
+        "precision": 0.88,
+        "recall": 0.91,
+        "f1": 0.895
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 24,
+      "prompt": "A dragon collects 11 gems but loses 14. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.597,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 48,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "After": 1,
+            "If": 1
+          }
+        }
+      },
+      "bleu": 0.01,
+      "bertscore": {
+        "precision": 0.856,
+        "recall": 0.906,
+        "f1": 0.88
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 25,
+      "prompt": "An astronaut finds 11 moon rocks and then finds 8 more. What is the total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "total"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.897,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 28,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "An": 1,
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.048,
+      "bertscore": {
+        "precision": 0.921,
+        "recall": 0.949,
+        "f1": 0.935
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 26,
+      "prompt": "An astronaut finds 2 moon rocks and then finds 3 more. What is the total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "total"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.912,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 19,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.029,
+      "bertscore": {
+        "precision": 0.927,
+        "recall": 0.942,
+        "f1": 0.934
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 27,
+      "prompt": "A dragon collects 11 gems but loses 18. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.735,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 10,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "After": 1
+          }
+        }
+      },
+      "bleu": 0.045,
+      "bertscore": {
+        "precision": 0.928,
+        "recall": 0.913,
+        "f1": 0.92
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 28,
+      "prompt": "Tell a story where 2 friends share 18 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.774,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 24,
+        "entity_detail": {
+          "unique_entities": 5,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "Two": 1,
+            "Mia": 1,
+            "Liam": 1,
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.025,
+      "bertscore": {
+        "precision": 0.887,
+        "recall": 0.931,
+        "f1": 0.908
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 29,
+      "prompt": "A dragon collects 5 gems but loses 15. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.657,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 7,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.044,
+      "bertscore": {
+        "precision": 0.936,
+        "recall": 0.896,
+        "f1": 0.915
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 30,
+      "prompt": "A farmer plants 10 rows with 10 sunflowers each. How many total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.363,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 3,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.028,
+      "bertscore": {
+        "precision": 0.942,
+        "recall": 0.854,
+        "f1": 0.896
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 31,
+      "prompt": "An astronaut finds 3 moon rocks and then finds 5 more. What is the total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "more"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.936,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 19,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "An": 1,
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.077,
+      "bertscore": {
+        "precision": 0.942,
+        "recall": 0.951,
+        "f1": 0.946
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 32,
+      "prompt": "A wizard has 4 magic coins and puts them into groups of 28. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.954,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 20,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.537,
+      "bertscore": {
+        "precision": 0.95,
+        "recall": 0.966,
+        "f1": 0.958
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 33,
+      "prompt": "An astronaut finds 5 moon rocks and then finds 10 more. What is the total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "total"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.928,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 21,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "An": 1,
+            "Then": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.073,
+      "bertscore": {
+        "precision": 0.939,
+        "recall": 0.957,
+        "f1": 0.948
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 34,
+      "prompt": "An astronaut finds 2 moon rocks and then finds 9 more. What is the total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.67,
+      "concepts_found": [
+        "total",
+        "more"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.841,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 18,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "She": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.038,
+      "bertscore": {
+        "precision": 0.915,
+        "recall": 0.932,
+        "f1": 0.923
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 35,
+      "prompt": "A farmer plants 2 rows with 4 sunflowers each. How many total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": true
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.714,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 21,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1,
+            "Farmer": 1
+          }
+        }
+      },
+      "bleu": 0.049,
+      "bertscore": {
+        "precision": 0.883,
+        "recall": 0.921,
+        "f1": 0.901
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 36,
+      "prompt": "An astronaut finds 5 moon rocks and then finds 10 more. What is the total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.67,
+      "concepts_found": [
+        "total",
+        "more"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.743,
+        "entity_consistency": 0.43,
+        "contradicted_entities": 0,
+        "sentence_count": 5,
+        "word_count": 82,
+        "entity_detail": {
+          "unique_entities": 7,
+          "reuse_ratio": 0.43,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "An": 2,
+            "Then": 2,
+            "How": 2,
+            "Support": 1,
+            "The": 1,
+            "No": 1,
+            "It": 1
+          }
+        }
+      },
+      "bleu": 0.02,
+      "bertscore": {
+        "precision": 0.825,
+        "recall": 0.899,
+        "f1": 0.86
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 37,
+      "prompt": "A wizard has 9 magic coins and puts them into groups of 81. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": true
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.961,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 21,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.563,
+      "bertscore": {
+        "precision": 0.952,
+        "recall": 0.972,
+        "f1": 0.962
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 38,
+      "prompt": "A dragon collects 5 gems but loses 9. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.878,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "It": 1
+          }
+        }
+      },
+      "bleu": 0.048,
+      "bertscore": {
+        "precision": 0.921,
+        "recall": 0.936,
+        "f1": 0.928
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 39,
+      "prompt": "A dragon collects 3 gems but loses 15. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.785,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 4,
+        "word_count": 58,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "If": 1,
+            "The": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.012,
+      "bertscore": {
+        "precision": 0.868,
+        "recall": 0.929,
+        "f1": 0.897
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 4,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 40,
+      "prompt": "A farmer plants 5 rows with 5 sunflowers each. How many total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": true
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.8,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1,
+            "Farmer": 1
+          }
+        }
+      },
+      "bleu": 0.074,
+      "bertscore": {
+        "precision": 0.898,
+        "recall": 0.917,
+        "f1": 0.907
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 41,
+      "prompt": "A wizard has 10 magic coins and puts them into groups of 110. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.5,
+      "concepts_found": [
+        "group"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.929,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 31,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.213,
+      "bertscore": {
+        "precision": 0.906,
+        "recall": 0.951,
+        "f1": 0.928
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 42,
+      "prompt": "A farmer plants 5 rows with 7 sunflowers each. How many total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.374,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 3,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.028,
+      "bertscore": {
+        "precision": 0.942,
+        "recall": 0.857,
+        "f1": 0.898
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 43,
+      "prompt": "A farmer plants 12 rows with 5 sunflowers each. How many total?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.381,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 3,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.028,
+      "bertscore": {
+        "precision": 0.943,
+        "recall": 0.857,
+        "f1": 0.898
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 44,
+      "prompt": "A dragon collects 3 gems but loses 13. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.699,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 9,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.045,
+      "bertscore": {
+        "precision": 0.918,
+        "recall": 0.901,
+        "f1": 0.909
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 45,
+      "prompt": "Tell a story where 2 friends share 8 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.788,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 23,
+        "entity_detail": {
+          "unique_entities": 5,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "Two": 1,
+            "Mia": 1,
+            "Zoe": 1,
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.022,
+      "bertscore": {
+        "precision": 0.888,
+        "recall": 0.934,
+        "f1": 0.91
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 1,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 46,
+      "prompt": "Tell a story where 12 friends share 36 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.768,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 16,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.029,
+      "bertscore": {
+        "precision": 0.882,
+        "recall": 0.911,
+        "f1": 0.896
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 47,
+      "prompt": "A dragon collects 6 gems but loses 14. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": false,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.696,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 7,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.044,
+      "bertscore": {
+        "precision": 0.937,
+        "recall": 0.898,
+        "f1": 0.917
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 48,
+      "prompt": "Tell a story where 4 friends share 44 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.746,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 15,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.017,
+      "bertscore": {
+        "precision": 0.874,
+        "recall": 0.906,
+        "f1": 0.89
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 49,
+      "prompt": "A wizard has 5 magic coins and puts them into groups of 55. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.944,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 22,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.409,
+      "bertscore": {
+        "precision": 0.941,
+        "recall": 0.972,
+        "f1": 0.956
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 50,
+      "prompt": "A wizard has 3 magic coins and puts them into groups of 15. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.952,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 20,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.537,
+      "bertscore": {
+        "precision": 0.953,
+        "recall": 0.973,
+        "f1": 0.963
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 51,
+      "prompt": "A wizard has 7 magic coins and puts them into groups of 21. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.957,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 20,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.74,
+      "bertscore": {
+        "precision": 0.965,
+        "recall": 0.989,
+        "f1": 0.977
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 52,
+      "prompt": "A dragon collects 6 gems but loses 10. How many remain?",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.0,
+      "concepts_found": [],
+      "coherence": {
+        "topic_drift_score": 0.688,
+        "entity_consistency": 0.25,
+        "contradicted_entities": 0,
+        "sentence_count": 5,
+        "word_count": 120,
+        "entity_detail": {
+          "unique_entities": 4,
+          "reuse_ratio": 0.25,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "It": 1,
+            "How": 1,
+            "Farmer": 1,
+            "If": 2
+          }
+        }
+      },
+      "bleu": 0.005,
+      "bertscore": {
+        "precision": 0.81,
+        "recall": 0.912,
+        "f1": 0.858
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 53,
+      "prompt": "An astronaut finds 6 moon rocks and then finds 10 more. What is the total?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "more"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.929,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 25,
+        "entity_detail": {
+          "unique_entities": 3,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "An": 1,
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.032,
+      "bertscore": {
+        "precision": 0.931,
+        "recall": 0.952,
+        "f1": 0.941
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 3,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 54,
+      "prompt": "A wizard has 3 magic coins and puts them into groups of 24. How many groups?",
+      "math": {
+        "solvable": true,
+        "operands_present": true,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.5,
+      "concepts_found": [
+        "divide"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.945,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 22,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "He": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.485,
+      "bertscore": {
+        "precision": 0.946,
+        "recall": 0.969,
+        "f1": 0.958
+      },
+      "equations": {
+        "has_numeric_setup": true,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 2,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    },
+    {
+      "id": 55,
+      "prompt": "Tell a story where 7 friends share 70 apples equally.",
+      "math": {
+        "solvable": false,
+        "operands_present": false,
+        "operation_present": true,
+        "ends_with_question": true,
+        "answer_leaked": false
+      },
+      "concept_coverage": 0.33,
+      "concepts_found": [
+        "share"
+      ],
+      "coherence": {
+        "topic_drift_score": 0.73,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 2,
+        "word_count": 16,
+        "entity_detail": {
+          "unique_entities": 2,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "They": 1,
+            "How": 1
+          }
+        }
+      },
+      "bleu": 0.029,
+      "bertscore": {
+        "precision": 0.88,
+        "recall": 0.909,
+        "f1": 0.895
+      },
+      "equations": {
+        "has_numeric_setup": false,
+        "has_question_mark": true,
+        "distinct_numbers_in_text": 0,
+        "inline_eq_count": 0,
+        "inline_eq_correct": 0,
+        "inline_eq_incorrect": 0
+      },
+      "comparison": null,
+      "human_scores": null
+    }
+  ],
+  "multi_turn": [
+    {
+      "turn": 1,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.49,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 3,
+        "word_count": 52,
+        "entity_detail": {
+          "unique_entities": 4,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "Farmer": 1,
+            "Ali": 1,
+            "How": 1,
+            "If": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.49
+    },
+    {
+      "turn": 2,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.565,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 8,
+        "word_count": 110,
+        "entity_detail": {
+          "unique_entities": 9,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "That": 1,
+            "Let": 1,
+            "Farmer": 1,
+            "Ali": 1,
+            "If": 1,
+            "So": 1,
+            "No": 1,
+            "Are": 1,
+            "What": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.565
+    },
+    {
+      "turn": 3,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.152,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 16,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "If": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.152
+    },
+    {
+      "turn": 4,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.5,
+        "entity_consistency": 0.25,
+        "contradicted_entities": 0,
+        "sentence_count": 7,
+        "word_count": 137,
+        "entity_detail": {
+          "unique_entities": 8,
+          "reuse_ratio": 0.25,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "Farmer": 2,
+            "Ali": 2,
+            "If": 1,
+            "So": 1,
+            "Great": 1,
+            "Now": 1,
+            "Are": 1,
+            "What": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.5
+    },
+    {
+      "turn": 5,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.184,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 11,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.184
+    },
+    {
+      "turn": 6,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.281,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 6,
+        "word_count": 86,
+        "entity_detail": {
+          "unique_entities": 10,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "Wow": 1,
+            "So": 1,
+            "Monday": 1,
+            "Tuesday": 1,
+            "Great": 1,
+            "Now": 1,
+            "Farmer": 1,
+            "Ali": 1,
+            "Or": 1,
+            "What": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.281
+    },
+    {
+      "turn": 7,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.182,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 1,
+        "word_count": 8,
+        "entity_detail": {
+          "unique_entities": 1,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "How": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.182
+    },
+    {
+      "turn": 8,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.342,
+        "entity_consistency": 0.18,
+        "contradicted_entities": 0,
+        "sentence_count": 12,
+        "word_count": 176,
+        "entity_detail": {
+          "unique_entities": 17,
+          "reuse_ratio": 0.18,
+          "contradicted_entities": 0,
+          "entity_counts": {
+            "Wow": 1,
+            "So": 1,
+            "Monday": 1,
+            "Tuesday": 1,
+            "Great": 1,
+            "Now": 1,
+            "Farmer": 2,
+            "Ali": 2,
+            "Or": 1,
+            "What": 1,
+            "Student": 2,
+            "Tell": 1,
+            "Teacher": 1,
+            "Absolutely": 1,
+            "Let": 1,
+            "If": 1,
+            "And": 1
+          }
+        }
+      },
+      "semantic_drift_score": 0.342
+    },
+    {
+      "turn": 9,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 10,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 11,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 12,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 13,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 14,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 15,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 16,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 17,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 18,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 19,
+      "turn_type": "story",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    },
+    {
+      "turn": 20,
+      "turn_type": "evaluate",
+      "coherence": {
+        "topic_drift_score": 0.166,
+        "entity_consistency": 0.0,
+        "contradicted_entities": 0,
+        "sentence_count": 0,
+        "word_count": 0,
+        "entity_detail": {
+          "unique_entities": 0,
+          "reuse_ratio": 0.0,
+          "contradicted_entities": 0,
+          "entity_counts": {}
+        }
+      },
+      "semantic_drift_score": 0.166
+    }
+  ]
+}
